@@ -1,0 +1,45 @@
+/*imporation des polices utilisées*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;800&display=swap');
+
+body,html {
+  margin:0; 
+  background-color: #CECEF6;
+  overflow-x: hidden;
+
+}
+h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 40px;
+}
+h2{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 30px;
+}
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
+}
+.condition-utilisation {
+    text-align: center;
+    margin-top: 200px;
+    padding: 20px;
+  }
+
+  .btn {
+    z-index: 1; 
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .icone {
+    width: 30px;
+  }

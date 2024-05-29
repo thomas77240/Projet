@@ -1,0 +1,156 @@
+
+footer {
+  background-color: #fff;
+  height: 350px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+}
+
+footer, a {
+  text-decoration: none;
+  color: black;
+}
+.column {
+  width: 20%;
+  text-align: center;
+  text-decoration: none;
+}
+.flogo {
+  display:flex;
+}.column.logo {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.terms {
+  margin-right: 70px;
+}
+
+@media only screen and (max-width: 768px) {
+
+.column.logo {
+  width: 100%;
+  text-align: center;
+  /* align-items: center; */
+  /* display: flex; */
+  /* justify-content: center; */
+  margin-left: 35%;
+}
+}
+
+.company-name2 {
+  color: #000;
+  margin-top: 12px;
+  margin-left: 10px;
+}
+
+.newsletter {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 50px;
+  padding: 15px;
+  width: 250px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.newsletter input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .search, .company-name {
+      display: none;
+  }
+
+  footer {
+      height: auto;
+      padding: 10px;
+  }
+
+  .column.logo {
+      width: 100%;
+      text-align: center;
+  }
+
+  .newsletter {
+      background-color: #fff;
+      border: 1px solid #000;
+      border-radius: 50px;
+      padding: 15px;
+      width: 250px;
+      margin-top: 20px;
+      display: flex;
+      align-items: center;
+  }
+
+  .newsletter input {
+      flex: 1;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+  }
+
+  .newsletter button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      margin-left: 10px;
+  }
+
+  .column {
+      margin-bottom: 50px;
+  }
+
+  footer {
+      margin-top: 50px;
+  }
+  .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+  }
+}

@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title>Contactez-nous</title>
+    <link rel="stylesheet" type="text/css" href="./style/contact.css" />
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+
+  </head>
+  <body>
+    <!-- Barre de navigation du site -->
+    <nav id="navbar">
+        <div class="nav_menu">
+          <div class="nav_close" onclick="CloseMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+            </div>
+          <li class="logo"><a href="./index.html"><img src="./media/img/locapark.png" alt="logo_locapark"></a></li>
+          <li class="accueil barre"><a href="./index.html">Accueil</a></li>
+          <li class="apropos barre"><a href="./apropos.html">Notre équipe</a></li>
+          <li class="location barre"><a href="./location.html">Location de places</a></li>
+          <li class="contact barre"><a href="./contact.html">Contactez-nous</a></li>
+          </div>
+          <div class="nav_burger" onclick="OpenMenuMobile()">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            </div>
+      </nav>  
+    <a href="#" class="btn">
+        <img src="./media/img/arrow-up.png" class="icone">
+      </a>
+    <form>
+        <h1>Contactez-nous</h1>
+        <div lass="separation"></div>
+        <div class="corps-formulaire">
+            <div class="gauche">
+                <div class="groupe">
+                    <label>Votre prénom*</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="ex: Jean-Pormanove" required>
+                </div>
+                <div class="groupe">
+                    <label>Votre email*</label>
+                    <input type="email" name="email" id="email" placeholder="ex: jean-promanove@gmail.com" required>
+                </div>
+                <div class="groupe">
+                    <label>Votre téléphonne</label>
+                    <input type="text" name="phonenumber" id="phonenumber" placeholder="ex: 0655664488" pattern="^(\+33|0)[6-7](\d\d){4}$" required>
+                </div>
+            </div>
+            <div class="droite">
+                <div class="groupe">
+                    <label>Message*</label>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="pied-formulaire" align="center">
+            <button>envoyer le message</button>
+            <p>* = obligatoire</p>
+        </div>
+    </form>
+    <footer>
+        <div class="column logo">
+            <div class="flogo">
+              <a href="./index.html"><img src="./media/img/locapark.png" alt="logo_locapark"></a>
+            </div>
+  
+        </div>
+        <div class="column">
+            <strong>Catégories</strong>
+            <p><a href="./index.html">Accueil</a></p>
+            <p><a href="./apropos.html">Notre équipe</a></p>
+            <p><a href="./location.html">Location de places</a></p>
+            <p><a href="./contact.html">Contactez-nous</a></p>
+        </div>
+        <div class="column">
+          <strong>Adresse</strong>
+          <p>77300 Fontainebleau<br/>
+            Route Forestière de la Génisse<br/>
+          06 67 84 06 62</p>
+      </div>
+        <div class="column">
+            <strong>Social</strong>
+            <p><a href="https://fr.linkedin.com/" onclick="window.open(this.href); return false;">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/" onclick="window.open(this.href); return false;">Instagram</a></p>
+            <p><a href="https://twitter.com/" onclick="window.open(this.href); return false;">Twitter</a></p>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; Locapark. All Rights Reserved 2024
+            </div>
+            <div class="terms">
+              <a href="./policy.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function OpenMenuMobile(){
+          document.querySelector('.nav_menu').classList.add('open');
+        }
+        function CloseMenuMobile(){
+          document.querySelector('.nav_menu').classList.remove('open');
+        }
+      </script>
+  </body>
+</html>

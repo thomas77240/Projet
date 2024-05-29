@@ -1,0 +1,530 @@
+/*imporation des polices utilisées*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;800&display=swap');
+
+body,html {
+  margin:0; 
+  background-color: #CECEF6;
+  overflow-x: hidden;
+  
+}
+
+
+.content{
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  margin-top: 280px;
+}
+.container{
+  position: absolute;
+}
+
+div.slogan{
+
+  padding: 20px;
+  left:17px;
+  margin-bottom: 10;
+  margin-right: 17px;
+  position:absolute;
+  height: 120px;
+  background-color: white;
+  border-radius: 30px;
+  z-index: 2;
+  
+  border: solid 2px #9d9d9d;
+}
+h1.titre{
+  text-align: center;
+  position: relative;
+  font-size: 25px;
+  top: 10%;
+  color:black;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+div.explication{
+  top:30px;
+  padding: 50px;
+  position:relative;
+  z-index: 1;
+  width:500px;
+  height: 150px;
+  transition : 0.3s ease-in-out;
+  background-color: white;
+  border-radius: 30px;
+  border: solid 2px #9d9d9d;
+}
+img.double_fleche{
+  z-index:3;
+  position:relative;
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  top: 95%;
+  left: 45%;
+  transition-duration: 0.2s;
+}
+p.text_explication{
+  text-align: left;
+  font-size: large;
+  position: relative;
+  top: 20%;
+  z-index:3;
+  color:black;
+  margin-bottom: 50px;
+  visibility: hidden;
+  opacity: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.container:hover .explication {
+  transition : 0.3s ease-in-out;
+  height: 280px;
+}
+.container:hover .text_explication{
+  visibility: visible;
+  transition : 0.3s ease-in-out;
+  opacity: 1;
+}
+.container:hover .double_fleche{
+  opacity: 0;
+}
+
+img.test {
+  width: 600px;
+  height: 350px;
+  margin-top: 100px;
+  margin-left: auto; /* Met la marge à gauche à "auto" pour centrer horizontalement */
+  margin-right: 10%;   /* Réinitialise la marge à droite à 0 */
+  display: block;    /* Assure que l'image est affichée en tant que bloc pour gérer la marge automatique */
+  border-radius: 30px;
+}
+
+.bienvenue {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  top: 200px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.debut {
+  font-size: 40px;
+}
+
+.color {
+  color: #0080FF;
+  font-size: 55px; 
+}
+
+.bouton {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 820px;
+  left: 0;
+  right: 0;
+  margin: auto; /* Modification de la valeur de left et ajout de ces propriétés */
+  background-color: #719fee;
+  border-radius: 25px;
+  border: 2px double #1f69ec;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.bouton:hover{
+  background-color: #ffffff;
+  border: 2px solid #1f69ec;
+  box-shadow: 10px 5px 5px #719fee;
+  color: #1f69ec;
+  text-align: center;
+}
+
+.fond {
+  background-color: #E0E0F8;
+  padding-bottom: 400px;
+}
+
+.fond2 {
+  background-color: #CECEF6;
+  padding-bottom: 50px;
+}
+
+h2.gain_temps {
+  text-align: center;
+  font-size: 30;
+  font-family:'Montserrat',sans-serif;
+}
+
+img.test {
+  width: 600px;
+  height: 350px;
+  margin-right: auto;
+  display: block;
+  border: 5px solid black;
+  border-radius: 25px;
+}
+
+
+
+.explication_de_secu {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.explication_du_gain p {
+  margin: 150px;
+}
+.explication_du_gain {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: flex-start;
+  font-size: 22px;
+
+}
+
+.fond3 {
+  background-color: #E0E0F8;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.explication_du_gain_argent {
+  display: flex;
+  justify-content: flex-start;
+  left: 4%;
+  align-items: flex-start;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+}
+
+img.place-parking2 {
+  width: 400px;
+  height: 600px;
+  margin-top: 100px;
+  border: 5px solid black;
+  border-radius: 20px;
+}
+
+.info-gain-argent {
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+h2.gain_argent {
+  text-align: left;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 50%;
+ 
+}
+
+p.explication_gain_argent {
+  margin-top: 35%;
+  margin-left: 20%;
+  max-width: 600px;
+  font-size: 22px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.fond4 {
+  background-color: #CECEF6;
+  padding-bottom:150px;
+}
+
+.coche-container {
+  margin-right: 20px; /* Ajustez la marge selon vos préférences */
+  margin-top: 4%; /* Ajoutez une marge en haut */
+}
+
+.coche {
+  width: 22px;
+}
+
+h2.secu {
+  text-align: center;
+  font-size: 30;
+  font-family:'Montserrat',sans-serif;
+}
+
+.explication_du_gain {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    align-items: center;
+}
+
+p.explication_secu {
+  margin-top: 4%;
+  max-width: 500px;
+  font-size: 22px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+img.image_secu {
+  width: 600px;
+  height: 350px;
+  margin-top: 100px;
+  margin-left: 20%;
+  margin-right: auto;
+  display: block;
+  border: 5px solid black;
+  border-radius: 25px;
+}
+
+.bouton2 {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 3300px;
+  left: 0;
+  right: 0;
+  margin: auto; /* Modification de la valeur de left et ajout de ces propriétés */
+  background-color: #719fee;
+  border-radius: 25px;
+  border: 2px double #1f69ec;
+  color: #ffffff;
+  text-align: center;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: none;
+}
+
+.bouton2:hover{
+  background-color: #ffffff;
+  border: 2px solid #1f69ec;
+  box-shadow: 10px 5px 5px #719fee;
+  color: #1f69ec;
+  text-align: center;
+  font-size: 17px;
+}
+
+
+.fond5 {
+  background-color: #E0E0F8;
+  padding-bottom:150px;
+}
+
+h2.faq {
+  text-align: center;
+  font-family:'Montserrat',sans-serif;
+}
+
+h2 {
+  font-size: 30;
+}
+.explication_de_faq {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  align-items: flex-start;
+}
+
+.explication_faq {
+  margin-top: 4%;
+  max-width: 500px;
+  font-size: 22px;
+  text-align: left;
+}
+
+img.place-parking5 {
+  width: 600px;
+  height: 350px;
+  margin-top: 100px;
+  margin-right: auto;
+  display: block;
+  border: 5px solid black;
+  border-radius: 25px;
+}
+
+.btn {
+  z-index: 999; 
+  height: 50px;
+  width: 50px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.icone {
+  width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  .debut {
+    margin-top: 100px;
+  }
+  .container {
+    position: static;
+  }
+  
+  .slogan {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h1.titre {
+    font-size: 20px;
+  }
+
+  div.explication {
+    width: 80%;
+    margin: 20px auto;
+  }
+
+  img.double_fleche {
+    width: 30px;
+    height: 30px;
+  }
+
+  p.text_explication {
+    font-size: 14px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+  .container:hover .explication {
+    height: auto;
+  }
+
+  .container:hover .double_fleche {
+    opacity: 1;
+  }
+
+  img.test{
+    width: 80%;
+  }
+
+  .bienvenue {
+    top: 100px;
+  }
+
+  .debut {
+    font-size: 30px;
+  }
+
+  .color {
+    font-size: 40px;
+  }
+
+  .bouton {
+    top: 920px;
+  }
+
+  .bouton2 {
+    top: 3820px;
+  }
+
+  .fond2,
+  .fond3,
+  .fond4,
+  .fond5 {
+    padding-bottom: 40px;
+  }
+
+  h2.gain_temps,
+  h2.gain_argent,
+  h2.secu,
+  h2.faq {
+    font-size: 24px;
+  }
+
+  .explication_du_gain,
+  .explication_du_gain_argent,
+  .explication_de_secu,
+  .explication_de_faq {
+    display: flex;
+    flex-direction: column-reverse; /* Display image below text on smaller screens */
+    align-items: center;
+    text-align: center;
+    margin: 0;
+  }
+  .explication_du_gain_argent {
+    left: 0%;
+  }
+
+  .explication_du_gain p {
+    margin: 0;
+    margin-top: 30px;
+  }
+
+  p.explication_gain_argent {
+    margin: 0;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  img.image_secu {
+    margin: 0;
+  }
+  p.explication_secu {
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  h2.gain_argent {
+    text-align: center;
+    left: 30%;
+}
+
+  img.place-parking2,
+  img.image_secu,
+  img.place-parking5 {
+    width: 80%;
+    height: auto;
+    margin: 0;
+    margin-top: 20px;
+
+  }
+
+  .info-gain-argent,
+  .explication_gain_argent,
+  .explication_secu,
+  .explication_faq {
+    max-width: 100%;
+  }
+  
+
+}
+
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}

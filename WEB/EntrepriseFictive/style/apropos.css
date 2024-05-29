@@ -1,0 +1,132 @@
+/*imporation des polices utilisées*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;800&display=swap');
+/*Attribut de style du contenu charger par iframe avec la classe navbar*/
+
+body{
+  /*Suppression de la marge du body a inclure dans chaque fichier html*/
+  margin:0;
+  background-color: #CECEF6;
+  overflow-x: hidden;
+}
+
+.apropos2 {
+  text-align: center;
+  margin-top: 20px;
+  position: relative;
+  top: 200px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.titre {
+  font-size: 40px;
+}
+
+.thomas {
+  width: 500px;
+  height: 650px;
+  margin-top: 280px;
+  background-color: #E0E0F8;
+  border-radius: 20px;
+  border: 5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info {
+  padding: 20px;
+}
+
+.info h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 20px;
+}
+
+img.img-cv {
+  display: flex;
+  justify-content: center;
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  border: 5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+.titouan {
+  width: 500px;
+  height: 650px;
+  margin-top: 280px;
+  background-color: #E0E0F8;
+  border-radius: 20px;
+  border: 5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mathurin {
+  width: 500px;
+  height: 650px;
+  margin-top: 280px;
+  background-color: #E0E0F8;
+  border-radius: 20px;
+  border: 5px solid black;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+footer {
+  background-color: #fff;
+  height: 350px;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+  margin-top: 200px;
+}
+
+.btn {
+  z-index: 1; 
+  height: 50px;
+  width: 50px;
+  background-color: crimson;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.icone {
+  width: 30px;
+}
+
+.detail {
+  text-align: center;
+  padding: 7em;
+}
+
+@media only screen and (max-width: 768px) {
+
+  .thomas, .titouan, .mathurin {
+    width: 80%;
+  }
+
+  img.img-cv {
+    width: 200px;
+    height: auto;
+    border-radius: 300px;
+  }
+
+}

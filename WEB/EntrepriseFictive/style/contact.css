@@ -1,0 +1,111 @@
+/*imporation des polices utilisées*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;800&display=swap');
+
+body,html {
+  margin:0; 
+  background-color: #CECEF6;
+  overflow-x: hidden;
+}
+
+form{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 40%;
+}
+
+form h1{
+    font-size: 20px;
+}
+
+form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: blueviolet;
+}
+
+body,html {
+  margin:0; 
+  background-color: #CECEF6;
+  overflow-x: hidden;
+}
+
+form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+form .corps-formulaire .groupe{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+form .corps-formulaire .droite{
+    margin-left: 40px;
+}
+form .corps-formulaire .droite .groupe{
+    height: 100%;   
+}
+form .corps-formulaire .gauche  .droite .groupe input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;   
+    border: 1px solid black;
+    border-radius: 5px;
+}
+form .corps-formulaire .gauche .groupe textarea{
+    margin-top: 5px;
+    padding: 10px;
+}
+
+  footer {
+    background-color: #fff;
+    height: 350px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); 
+    margin-top: 400px;
+  }
+
+  .btn {
+    z-index: 1; 
+    height: 50px;
+    width: 50px;
+    background-color: crimson;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    cursor: pointer;
+  }
+  
+  .icone {
+    width: 30px;
+  }
+  @media only screen and (max-width: 768px) {
+
+    form {
+        margin-top: 200px;
+        margin-bottom: 300px;
+    }
+    form .corps-formulaire .droite {
+        margin: 0;
+        
+    }
+  
+  }

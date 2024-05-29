@@ -1,0 +1,119 @@
+<html>
+  <head>
+    <title>Location</title>
+    <link rel="stylesheet" type="text/css" href="./style/location.css" />
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav_menu">
+        <div class="nav_close" onclick="CloseMenuMobile()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
+          </div>
+        <li class="logo"><a href="./index.html"><img src="./media/img/locapark.png" alt="logo_locapark"></a></li>
+        <li class="accueil barre"><a href="./index.html">Accueil</a></li>
+        <li class="apropos barre"><a href="./apropos.html">Notre équipe</a></li>
+        <li class="location barre"><a href="./location.html">Location de places</a></li>
+        <li class="contact barre"><a href="./contact.html">Contactez-nous</a></li>
+        </div>
+        <div class="nav_burger" onclick="OpenMenuMobile()">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          </div>
+    </nav>  
+  <a href="#" class="btn">
+    <img src="./media/img/arrow-up.png" class="icone">
+  </a>
+    <div class="locations">
+      <h1 class="titre">Location en ligne</h1>
+    </div>
+    <div class="loca1">
+      <div class="info">
+        <h2>Lieu : Bordeaux</h2>
+        <h2>Description :</h2>
+        <p>Place de parking situé au centre de Bordeaux dans un parking sous terrain, à l'Hotel de ville. <br/> Place libre du 01/02/2024 au 10/02/2024</p>
+        <h2>Tel : 06 51 35 20 06</h2>
+        <img src="./media/img/place-loca.jpg" alt="img-loca1" class="img-loca1">
+        <button class="bouton"><a>Louer</a></button>
+      </div>
+    </div>
+    <div class="loca1">
+        <div class="info">
+          <h2>Lieu : Cesson</h2>
+          <h2>Description :</h2>
+          <p>Place n°45 en pleine air, situé sur la place du marché. Il n'y a pas trop de passage, idéal pour garer en toute tranquilité sa voiture. <br/> Place libre 24h/24 7j/7</p>
+          <h2>Tel : 06 12 34 56 78</h2>
+          <img src="./media/img/place-loca2.jpg" alt="img-loca2" class="img-loca1">
+          <button class="bouton2"><a>Louer</a></button>
+        </div>
+      </div>
+      <div class="loca1">
+        <div class="info">
+          <h2>Lieu : Corbeil Essonnes</h2>
+          <h2>Description :</h2>
+          <p>Place de parking dans un parking sous terrain à la gare de Corbeil Essones <br/> Place disponible du 07/03/2024 au 28/04/2024</p>
+          <h2>Tel : 06 54 25 63 45</h2>
+          <img src="./media/img/place-loca3.jpg" alt="img-loca3" class="img-loca1">
+          <button class="bouton3"><a>Louer</a></button>
+        </div>
+      </div>
+
+
+      <button class="bouton4"><a>Faire louer sa place</a></button>
+
+
+      <footer>
+        <div class="column logo">
+            <div class="flogo">
+              <a href="./index.html"><img src="./media/img/locapark.png" alt="logo_locapark"></a>
+            </div>
+  
+        </div>
+        <div class="column">
+            <strong>Catégories</strong>
+            <p><a href="./index.html">Accueil</a></p>
+            <p><a href="./apropos.html">Notre équipe</a></p>
+            <p><a href="./location.html">Location de places</a></p>
+            <p><a href="./contact.html">Contactez-nous</a></p>
+        </div>
+        <div class="column">
+          <strong>Adresse</strong>
+          <p>77300 Fontainebleau<br/>
+            Route Forestière de la Génisse<br/>
+          06 67 84 06 62</p>
+      </div>
+        <div class="column">
+            <strong>Social</strong>
+            <p><a href="https://fr.linkedin.com/" onclick="window.open(this.href); return false;">LinkedIn</a></p>
+            <p><a href="https://www.instagram.com/" onclick="window.open(this.href); return false;">Instagram</a></p>
+            <p><a href="https://twitter.com/" onclick="window.open(this.href); return false;">Twitter</a></p>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="copyright">
+                &copy; Locapark. All Rights Reserved 2024
+            </div>
+            <div class="terms">
+              <a href="./policy.html">Terms & Conditions</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+      function OpenMenuMobile(){
+        document.querySelector('.nav_menu').classList.add('open');
+      }
+      function CloseMenuMobile(){
+        document.querySelector('.nav_menu').classList.remove('open');
+      }
+    </script>
+  </body>
+</html>
