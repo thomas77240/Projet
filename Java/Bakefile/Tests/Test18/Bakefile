@@ -1,0 +1,8 @@
+# Ceci est un commentaire
+all: comment
+
+# Ligne vide ci-dessous
+
+comment:
+	echo "Processing comments..."
+	touch comment.out

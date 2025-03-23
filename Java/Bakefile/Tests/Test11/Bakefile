@@ -1,0 +1,6 @@
+all: fail
+
+fail:
+	echo "This will fail..."
+	non_existing_command
+	touch fail.out

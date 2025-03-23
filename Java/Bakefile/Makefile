@@ -1,0 +1,38 @@
+Make : build/fr/iutfbleau/bakefile/BakeMain.class
+	jar cvef fr.iutfbleau.bakefile.BakeMain Bake.jar -C build fr
+
+### VARIABLES ###
+
+JC = javac
+JV = java
+JCFLAGS = -d build -cp build -sourcepath "src:tmp" -encoding UTF-8 -implicit:none
+DIR = src/main/java/fr/iutfbleau/bakefile
+
+### REGLES ESSENTIELLES ###
+
+build/fr/iutfbleau/bakefile/BakeMain.class : $(DIR)/BakeMain.java build/fr/iutfbleau/bakefile/BakeParser.class build/fr/iutfbleau/bakefile/Rule.class
+	$(JC) $(JCFLAGS) $(DIR)/BakeMain.java
+
+build/fr/iutfbleau/bakefile/BakeParser.class : $(DIR)/BakeParser.java build/fr/iutfbleau/bakefile/Rule.class
+	$(JC) $(JCFLAGS) $(DIR)/BakeParser.java
+
+build/fr/iutfbleau/bakefile/Rule.class : $(DIR)/Rule.java
+	$(JC) $(JCFLAGS) $(DIR)/Rule.java
+
+### REGLES OPTIONNELLES ###
+
+run :
+	$(JV) -jar Bake.jar
+
+clean :
+	rm -rf build
+	rm -rf Bake.jar
+
+build:
+	mkdir -p build
+
+### BUTS FACTISES ###
+
+.PHONY : run clean mrproper
+
+### FIN ###

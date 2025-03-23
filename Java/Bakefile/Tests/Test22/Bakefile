@@ -1,0 +1,9 @@
+all: delay
+
+delay:
+	echo "Step 1..."
+	sleep 1
+	touch delay1.out
+	echo "Step 2..."
+	sleep 1
+	touch delay2.out

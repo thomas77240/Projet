@@ -1,0 +1,6 @@
+
+all: local_var
+
+local_var:
+	VAR="Local" && echo "Variable is $(VAR)"
+	touch local_var.out

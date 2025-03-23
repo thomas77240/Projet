@@ -1,0 +1,7 @@
+all: multi_cmd
+
+multi_cmd:
+	echo "Commande 1..."
+	touch file1.out
+	echo "Commande 2..."
+	touch file2.out

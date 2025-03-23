@@ -1,0 +1,15 @@
+GREETING = Bonjour
+TARGET = world
+
+all: greet greet2
+
+greet:
+	echo "$(GREETING), $(TARGET)!"
+	touch greet.out
+
+# Modification de variable
+TARGET = tout le monde
+
+greet2:
+	echo "$(GREETING), $(TARGET)!"
+	touch greet2.out

@@ -1,0 +1,14 @@
+VAR = First
+
+all: first second
+
+first:
+	echo "$(VAR)"
+	touch first.out
+
+# Réaffectation
+VAR = Second
+
+second:
+	echo "$(VAR)"
+	touch second.out

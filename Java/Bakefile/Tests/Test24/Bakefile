@@ -1,0 +1,4 @@
+all: conditional
+
+conditional:
+	if [ ! -f "conditional.out" ]; then echo "File doesn't exist"; touch conditional.out; fi

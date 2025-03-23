@@ -1,0 +1,17 @@
+all: final
+
+final: step3
+	echo "Building final target..."
+	touch final.out
+
+step3: step2
+	echo "Building step 3..."
+	touch step3.out
+
+step2: step1
+	echo "Building step 2..."
+	touch step2.out
+
+step1:
+	echo "Building step 1..."
+	touch step1.out

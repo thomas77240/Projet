@@ -1,0 +1,5 @@
+all: direct
+
+direct:
+	echo "Direct execution"
+	touch direct.out

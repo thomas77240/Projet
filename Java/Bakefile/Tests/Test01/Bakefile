@@ -1,0 +1,6 @@
+all: compile
+	echo "Building all targets..."
+
+compile:
+	echo "Compiling project..."
+	touch compile.out

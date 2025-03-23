@@ -1,0 +1,10 @@
+all: compile clean
+
+compile:
+	echo "Compiling project..."
+	touch compile.out
+
+clean:
+	echo "Cleaning up..."
+	rm -f compile.out
+	touch clean.out

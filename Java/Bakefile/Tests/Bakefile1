@@ -1,0 +1,28 @@
+# Exemple de Bakefile pour tests
+
+# Définition des cibles phony : elles seront toujours exécutées
+.PHONY: clean test
+
+# Cible par défaut "all"
+all: compile run test
+	echo "Building all targets..."
+
+# Compilation : simule la création d'un fichier compilé
+compile:
+	echo "Compiling project..."
+	touch compile.out
+
+# Exécution : dépend de la compilation
+run: compile
+	echo "Running project..."
+	touch run.out
+
+# Tests : dépend de run ; comme cible phony, elle s'exécute toujours
+test: run
+	echo "Executing tests..."
+	touch test.out
+
+# Nettoyage : supprime les fichiers générés
+clean:
+	echo "Cleaning up..."
+	rm -f compile.out run.out test.out

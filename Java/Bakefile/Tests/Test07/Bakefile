@@ -1,0 +1,5 @@
+all: A B
+
+A B:
+	echo "Building both A and B..."
+	touch A.out B.out

@@ -1,0 +1,13 @@
+all: link
+
+compile1:
+	echo "Compiling file1..."
+	touch file1.out
+
+compile2:
+	echo "Compiling file2..."
+	touch file2.out
+
+link: compile1 compile2
+	echo "Linking files..."
+	touch exe.out

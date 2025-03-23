@@ -1,0 +1,6 @@
+all: compile
+	echo "All targets up-to-date"
+
+compile: compile.src
+	echo "Compiling project..."
+	touch compile.out

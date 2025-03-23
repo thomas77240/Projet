@@ -1,0 +1,5 @@
+all: debug
+
+debug:
+	echo "Debug mode activated"
+	touch debug.out

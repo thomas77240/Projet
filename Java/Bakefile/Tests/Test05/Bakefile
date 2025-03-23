@@ -1,0 +1,7 @@
+MSG = Hello, World!
+
+all: show
+
+show:
+	echo "$(MSG)"
+	touch show.out

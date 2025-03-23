@@ -1,0 +1,5 @@
+all: missing
+
+missing: nonexistent.src
+	echo "Building missing target..."
+	touch missing.out

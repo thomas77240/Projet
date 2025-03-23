@@ -1,0 +1,6 @@
+all: ~/output/complex.out
+
+~/output/complex.out:
+	echo "Building complex path target..."
+	mkdir -p ~/output
+	touch ~/output/complex.out

@@ -1,0 +1,9 @@
+all: A
+
+A: B
+	echo "Building A..."
+	touch A.out
+
+B: A
+	echo "Building B..."
+	touch B.out
